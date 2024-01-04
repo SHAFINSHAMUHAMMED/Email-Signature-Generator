@@ -1,0 +1,109 @@
+body {
+  background-color: #eaf0ff;
+}
+.panel {
+box-shadow: none;
+}
+.panel-heading {
+border-bottom: 0;
+}
+.panel-title {
+font-size: 17px;
+}
+.panel-title > small {
+font-size: .75em;
+color: #999999;
+}
+.panel-body *:first-child {
+margin-top: 0;
+}
+.panel-footer {
+border-top: 0;
+}
+
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.07);
+}
+
+form label {
+  color: #999999;
+  font-weight: 400;
+}
+
+.form-horizontal .form-group {
+margin-left: -15px;
+margin-right: -15px;
+}
+@media (min-width: 768px) {
+.form-horizontal .control-label {
+  text-align: right;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+}
+
+.profile__contact-info-icon {
+  float: left;
+  font-size: 18px;
+  color: #999999;
+}
+.profile__contact-info-body {
+  overflow: hidden;
+  padding-left: 20px;
+  color: #999999;
+}
+.profile-avatar {
+width: 200px;
+position: relative;
+margin: 0px auto;
+margin-top: 196px;
+border: 4px solid #f3f3f3;
+}
+.social-icon {
+  width: 20px;
+  height: 30px;
+}
+.card-carousel {
+  width: 150px;
+  height: 100px;
+  border: 1px solid rgb(171, 170, 170);
+}
+.card-carousel :active {
+  background-color: aqua;
+}
+.slick-slide {
+  margin: 5px;
+  height: 100px;
+}
+.slick-slider {
+  position: relative;
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px;
+}
+.slick-list {
+  height: 120px;
+}
+.slick-track {
+  height: 120px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 30%;
+}
+.slick-prev {
+  left: -40px;
+}
+.slick-prev:before, .slick-next:before {
+  color: black;
+  font-size: 40px;
+}
+.slider-div {
+  z-index: 1;
+}
+.copy-btn {
+  z-index: 5;
+}
