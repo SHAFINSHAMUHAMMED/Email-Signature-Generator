@@ -3,27 +3,30 @@ import React from 'react';
 export default function temp3({ data }) {
   return (
     <table style={{
-        width: '500px',
+        width: '100%',
         height:'200px',
         background: 'white',
         boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
         borderCollapse: 'collapse',
         margin: 'auto', 
         fontFamily: 'Arial, sans-serif',
+        display:'flex',
+        justifyContent:'space-evenly',
       }}>
         <tbody >
           <tr>
-            <td rowSpan="6" style={{ width: '150px', textAlign: 'center' }}>
+            <td rowSpan="6" style={{ margin:'auto',width: '120px', textAlign: 'center' }}>
             <img 
                 src={data.profileImage} 
                 alt="Profile" 
-                width="120"
-                height="120"
+                width="100"
+                height="100"
                 style={{
                   borderRadius: '60px',
                   objectFit: 'cover',
                   border: '0',
-                  display: 'block'
+                  display: 'block',
+                  marginBottom:'50px'
                 }}
               />
             </td>

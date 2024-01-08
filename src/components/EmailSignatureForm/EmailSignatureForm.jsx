@@ -31,7 +31,33 @@ function EmailSignatureForm({ onFormSubmit }) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+  
   const [copySuccess, setCopySuccess] = useState(false);
   const [activeTemplate, setActiveTemplate] = useState("");
   const [formData, setFormData] = useState({
@@ -198,7 +224,7 @@ function EmailSignatureForm({ onFormSubmit }) {
             style={{ backgroundColor: "white" }}
           >
             <div className="panel panel-default">
-              <div className=" d-flex justify-content-center align-items-end panel-body text-center">
+              <div className=" d-flex justify-content-start align-items-end panel-body text-center">
                 {formData.profileImage ? (
                   <img
                     src={formData.profileImage}
@@ -457,7 +483,7 @@ function EmailSignatureForm({ onFormSubmit }) {
             </div>
             <div
               ref={containerRef}
-              className="signature-preview d-flex flex-column pt-3 pe-4 pb-3 align-items-center justify-content-center"
+              className="signature-preview d-flex flex-column pt-3  pb-3 align-items-center justify-content-center"
               style={{
                 marginTop: "10px",
                 height: "350px",

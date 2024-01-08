@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function temp2({ data }) {
   return (
-    <table style={{ width: '100%', maxWidth: '600px', margin: 'auto', fontFamily: 'Arial, sans-serif', backgroundColor: '#f4f5f7' }}>
+    <table style={{ width: '100%', margin: 'auto', fontFamily: 'Arial, sans-serif', backgroundColor: '#f4f5f7' }}>
       <tr>
         <td style={{ width: '33%', textAlign: 'center', backgroundColor: '#0d6efd', borderRadius: '.5rem', padding: '20px' }}>
           <img
